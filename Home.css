@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EDF0FF;
+}
+
+/* ناف بار ستايل */
+.navbar1 ul{
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* ناف بار عرض وطول */
+.navbar{
+ width: 100%;
+ height: 100px;
+ margin: auto;
+ padding: 35px 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background: white;
+ 
+}
+/* ديزاين اللوقو */
+#logo{
+    display: flex;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+/* ترتيب الناف بار */
+#navbar-ul{
+    display: flex;
+    align-items: center;
+    width:80%;
+    white-space: nowrap;
+}
+
+
+/* ترتيب الناف بار */
+#navbar-ul ul{
+  list-style: none;
+  display: flex;
+  justify-content:flex-start;
+  gap: 30%;
+}
+
+/* ترتيب اللينك */
+#navbar-ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: large;
+    position: relative;
+}
+
+/* ترانسشين الناف بار */
+#navbar-ul li a::after{
+  content: ' ';
+  display: block;
+  height: 0.3em;
+  width: 0;
+  background-color: #6C4AB3;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+
+#navbar-ul li a:hover::after{
+  color: #6C4AB3;
+  width: 100%;
+  position: absolute;
+  right: 2%;
+}
+
+
+/* تسجيل الدخول */
+#button1{
+    display: inline-block;
+    background-color: #EDF0FF;
+    border-radius: 5%;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    /* margin-right: 750px; */
+     h4{
+        padding-top: 7px;
+        color: #6C4AB3;
+     }
+     
+}
+
+#button2{
+    display: inline-block;
+    background-color: #6C4AB3;
+    border-radius: 5%;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    margin-left: 20px;
+     h4{
+        padding-top: 7px;
+        color: #F8F9F9;
+      }
+
+}
+
+#section1{
+    display: flex;
+    justify-content: space-around;
+}
+/* ديزاين العباره */
+#Bargarraf1{
+    display: inline-block;
+    padding-right: 80px;
+    padding-top: 40px;
+    margin-top: 220px;
+    h1{
+        color: #6C4AB3;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    h4{
+        background-color: #6C4AB3;
+        border-radius: 5%;
+        width: 90px;
+        height: 30px; 
+        text-align: center;
+        margin-top: 45px;
+        padding-top: 8px;
+        margin-right: 120px;
+        color: #F8F9F9;
+     }
+}
+
+
+
+#Bargarraf2{
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 200px;
+    h1{
+        color: #6C4AB3;
+         padding-bottom: 10px; 
+    }
+    h3{
+      padding-bottom: 20px;
+    }
+
+    
+}
+
+
+#baby-img{
+    margin-top: 90px;
+}
+
+/* ديزاين الخط للعنوان */
+.line-Services{
+    padding-top: 240px;
+    text-align: center;
+    img{
+      text-align: center;
+      margin-left: 40px;
+    }
+    
+}
+/* ديزاين الخدمات */
+#card-Schoolss-Activtess{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 340px;
+    margin-top: 60px;
+    margin-right: 40px;
+    margin-left: 80px;
+    
+}
+#card-Schoolss-Activtess :hover{
+  transform: translateY(-15px);
+  
+}
+
+#card-Examss-Centerss{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 340px;
+   margin-top: 60px;
+   margin-right: 40px;
+   margin-left: 80px;
+}
+#card-Examss-Centerss :hover{
+  transform: translateY(-15px);
+}
+
+
+
+#head{
+  padding-top: 240px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container{
+  display: flex; 
+  justify-content: center; 
+ 
+}
+
+/* ديزاتين كارد الاحصائيات */
+.card{
+  background-color:white;
+  width: 200px;
+  height: 260px;
+  border: solid rebeccapurple 2px;
+  text-align: center;
+  border-radius: 10% ;
+  box-shadow: rgba(0, 0, 0, 0.536) 0px 4px 12px;
+
+  
+  
+  h2{
+    color: #8D9EFC;
+    padding-top: 15px;
+  }
+   h3{
+    padding-top: 30px; 
+    color: #6C4AB3;
+   }
+}
+
+/* ايكونز */
+.icons{
+  background-color: #8D72E1;
+  text-align: center;
+  color: white;
+  width: 80px;
+  height: 80px;
+  padding-top: 29px; 
+  border-radius: 50%;
+  margin-right: 55px; 
+}
+
+.card-posithn{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+
+
+
+
+
+/* من نحن */
+  #about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid #6C4AB3 4px;
+    margin-top: 60px;
+    width: 700px;
+    border-radius: 10px;
+    margin-right: 380px;
+    
+     p{
+      text-align: center;
+      font-size: larger;
+      
+     }
+      h3{
+        text-align: center;
+        margin-top: 70px;
+        color: #6C4AB3;
+      }
+      img{
+        border-radius: 10px;
+        height: 290px;
+      }
+  }
+
+  #img-about{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* ديزاين الفوتر */
+
+  #footer-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+
+
+  #footer{
+    background-color: #6C4AB3;
+    margin-top: 140px;
+    color: white;
+     img{
+      width: 330px;
+     }
+     #communication{
+      margin-left: 100px;
+      h6{
+        padding-top: 10px;
+      }
+     }
+      .subscription{
+       margin-right: 200px;
+       
+       h2{
+        margin-right: 200px;
+        margin-bottom: 10px;
+       }
+
+       input{
+        margin-top: 20px;
+       }
+      }
+        
+  }

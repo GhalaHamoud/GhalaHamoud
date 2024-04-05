@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>همم</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+     <!--background video-->
+     <section> 
+        <video autoplay loop muted playsinline class="background-clip">
+            <source src="/imges/VideoStar.mp4" type="video/mp4">
+        </video>
+        <!--Create Account-->
+        <div class="login-box"> 
+            <form action="#" method="POST" onsubmit="return validateForm()">
+                <h2>تسجيل الدخول</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required id="email" oninput="checkFieldsFilled()">
+                    <label for="email">البريد الاكتروني</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" required id="password" oninput="checkFieldsFilled()">
+                    <label for="password"> كلمة المرور</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">تذكرني </label>
+                    <a href="#">هل نسيت كلمة المرور؟</a>
+                </div>
+                 <button type="submit"><a href="/html/Home.html">تسجيل دخول</button></a>
+                <div class="register-link">
+                    <p> ليس لديك حساب؟ <a href="#">سجل الان</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email.trim() === "" || password.trim() === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            return true;
+        }
+ 
+        function checkFieldsFilled() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var emailLabel = document.querySelector('label[for="email"]');
+            var passwordLabel = document.querySelector('label[for="password"]');
+ 
+            if (email.trim() !== "") {
+                emailLabel.style.top = "-5px";
+            } else {
+                emailLabel.style.top = "50%";
+            }
+ 
+            if (password.trim() !== "") {
+                passwordLabel.style.top = "-5px";
+            } else {
+                passwordLabel.style.top = "50%";
+            }
+        }
+    </script>
+</body>
+</html>
